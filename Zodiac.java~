@@ -1,0 +1,91 @@
+import java.util.*;
+
+public class Zodiac {
+  public static void main (String[] args) {
+    //Declrations
+    Scanner input = new Scanner(System.in);
+    String month;
+    int day;
+    
+    //Ask Stuff
+    System.out.print("I will tell you your Zodiac sign and fortune");
+    System.out.println("Enter the month you were born: ");
+    month = input.nextLine();
+    System.out.println("Enter the day you were born: ");
+    day = input.nextInt();
+    
+    
+    //Do Stuff
+    if (month.equals("december" || "janurary") && day >= 22 && day <= 20) { 
+          System.out.println("You are a Capricorn");
+    }
+    else if (month.equals("janurary" || "feburary") && day >= 21 && day <= 19) { 
+          System.out.println("You are a Aquarius");
+    }
+    else if (month.equals("feburary" || "march") && day >= 20 && day <= 20) {
+          System.out.println("You are a Pisces");
+    }
+    else if (month.equals("march" || "april") && day >= 20 && day <= 21) {
+          System.out.println("You are a Aries");
+    }
+    else if (month.equals("april" || "may") && day >= 21 && day <= 21) { 
+          System.out.println("You are a Taurus");
+    }
+    else if (month.equals("may" || "june") && day >= 22 && day <= 21) { 
+          System.out.println("You are a Gemini");
+    }
+    else if (month.equals("june" || "july") && day >= 22 && day <= 23) { 
+          System.out.println("You are a Cancer");
+    }
+    else if (month.equals("july" || "august") && day >= 24 && day <= 23) { 
+          System.out.println("You are a Leo");
+    }
+    else if (month.equals("august" || "september") && day >= 24 && day <= 23) {
+          System.out.println("You are a Virgo");
+    }
+    else if (month.equals("september" || "october") && day >= 24 && day <= 23) { 
+          System.out.println("You are a Libra");
+    }
+    else if (month.equals("october" || "november") && day >= 24 && day <= 22) { 
+          System.out.println("You are a Scorpio");
+    }
+    else if (month.equals("november" || "december") && day >= 23 && day <= 21) { 
+          System.out.println("You are a Sagittarius");
+    }
+    else {
+          System.out.println("You goofed");
+
+    }
+
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    input.close()  
+  }//end main
+}//end class

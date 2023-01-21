@@ -1,0 +1,49 @@
+import java.util.*;
+
+public class WhileLoops1 {
+  public static void main (String[] args) {
+    //Declarations 
+    Scanner input = new Scanner(System.in);
+    String sec = "hello";
+    String guess; 
+    int secLen = sec.length();
+    //counter
+    int correctL = 0;
+    
+
+
+
+    //lets temp use 5 guesses to get the word right
+    for (int i = 1; i <= 5 ; i++ ) {
+      System.out.println("\nThe secret word is "+secLen+" letters long");
+      System.out.print("Try to gues the secret word: ");
+      guess = input.nextLine().toLowerCase(); 
+      
+      //reset the counter after each guess
+      correctL = 0;
+      
+      for (int j = 0; j < secLen ;j++) {
+        //how can we comapre the leeters at a given index point?
+        //use .charAt
+        if (sec.charAt(j) == guess.charAt(j)) {
+          System.out.println("Letter "+ (j +1) +" is "+guess.charAt(j));
+          correctL++;
+        }//end if that comapprs the letters.
+      }//end for loop that compares all the letters in both words
+      System.out.println("Correct letters = "+correctL);
+      //if the words are the same break
+      if (sec.equals(guess)) {//correctLetter is the same as the length of secret
+       break; 
+      }//end if to stop the code
+    }//end for loop to temporarily give 5 guesses
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  }//end main
+}//end class 

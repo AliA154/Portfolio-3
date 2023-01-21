@@ -1,0 +1,29 @@
+import java.util.*;
+
+public class WhileLoops3 {
+  public static void main (String[] args) {
+    //Declarations 
+    Scanner input = new Scanner(System.in);
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    input.close();
+  }//end main
+}//end class 

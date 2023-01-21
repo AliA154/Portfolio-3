@@ -1,0 +1,34 @@
+import java.util.*;
+
+public class WhileLoops2 {
+  public static void main (String[] args) {
+    //Declarations 
+    Scanner input = new Scanner(System.in);
+    
+    System.out.println("Used a for loop to print the numbers");
+    for (int i = 1; 1<=33 ; i+=2) {
+      System.out.print(i + " ");
+    }
+    System.out.print();
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    input.close();  
+  }//end main
+}//end class
